@@ -12,32 +12,9 @@ def effacer():
     original.save("pingy1.png")
     photo2 = PhotoImage(file ="pingy1.png")
     can2.create_image(200,200,image=photo2)
-   
-
-#
-def transformation1():
-    original=Image.open("pingy1.png")
-    nouvelleImage=Image.new("RGBA",(original.size[0],original.size[1]))
-
-    pixels=original.load()
-    nouveauxpixels=nouvelleImage.load()
-
-    for i in range (original.size[0]):
-        for j in range (original.size[1]):
-            nouveauxpixels[i,j]=pixels[original.size[0]-i-1,original.size[1]-j-1]
-
-    nouvelleImage.save("pingy1.png")
-    photo2 = PhotoImage(file ="pingy1.png")
-    can2.delete(ALL)
-    can2.create_image(200,200,image=photo2)
     fen1.mainloop()
 
-def transformation2():
-     original=Image.open("pingy1.png")
-     nouvelleImage=Image.new("RGBA",(original.size[0],original.size[1]))
-     pixels=original.load()
-     nouveauxpixels=nouvelleImage.load()
-
+#
 
      for i in range (original.size[0]):
         for j in range (original.size[1]):
