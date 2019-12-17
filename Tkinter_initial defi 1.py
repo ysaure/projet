@@ -12,7 +12,7 @@ def effacer():
     original.save("pingy1.png")
     photo2 = PhotoImage(file ="pingy1.png")
     can2.create_image(200,200,image=photo2)
-    fen1.mainloop()
+   
 
 #
 def transformation1():
